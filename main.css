@@ -1,24 +1,141 @@
-*{
-  border: 2px red dashed;
+/*******************************
+          GENERAL
+*******************************/
+
+body{
+  display: flex
 }
 
-section {
-  display: inline-block;
-  width: 50%;
-}
+/*******************************
+       SECTION/CONTAINER
+*******************************/
 
-.tile-container{
+.container{
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
+  width: 50%;
   height: 100vh;
-  float:left;
 }
 
-.tile {
-  width: 32%;
+.img-conatiner {
+  background-image: url("honnold.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -35px;
 }
 
-.tile1 {
-  width: 
+.content-container {
+  position: absolute;
+  top: 41%;
+  left: 36%;
+  display: block;
 }
+
+/*******************************
+       PROFILE CONTAINER
+********************************/
+
+.profile-container{
+  margin: 25px 20px 0;
+  color: white;
+}
+.profile-btn {
+  background-color: transparent;
+  color: white;
+  border: 1px white solid;
+  padding: 10px;
+  margin-right: 15px;
+  width: 90px;
+}
+
+.box2 {
+  background-color: #E16036;
+  flex-grow: 2;
+}
+
+/*******************************
+       BOX STYLE
+*******************************/
+
+.icon{
+  width: 40px;
+  height: auto;
+  color: white;
+}
+
+.box {
+  position: relative;
+  width: 33.333%;
+  height: 33.333%;
+}
+
+.box1 {
+  background-color: #BDBDBD;
+}
+
+.box3 {
+  background-color: #6C756B;
+
+}
+.box4 {
+  background-color: #93ACB5;
+
+}
+.box5 {
+  background-color: #BBDEFB;
+
+}
+.box6{
+  background-color: grey;
+
+}
+.box7 {
+  background-color: #81171B;
+}
+.box8{
+  background-color: #0292F2;
+}
+
+
+/*******************************
+       SECTION/CONTAINER
+*******************************/
+
+@media screen and (max-width:775px) {
+  body {
+    flex-direction: column-reverse;
+  }
+  .container {
+    width: 100%;
+  }
+  .content-container{
+    top: 36%;
+    left: 43%;
+  }
+  .img-conatiner{
+    background-position: top;
+    height: 45vh;
+  }
+
+  .box {
+    width: 50%;
+    height: 25%;
+    font-size: x-small;
+  }
+
+  .box-container{
+    /*  position: absolute;*/
+    bottom: 0;
+    top: 44%;
+  }
+  .profile-btn{
+    width: 65px;
+    margin-right: 7px;
+  }
+  .profile-container{
+    margin: 20px 6px 0;
+  }
+}
+
+@media screen and (max-width:560px) {
