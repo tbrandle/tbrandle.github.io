@@ -1,0 +1,99 @@
+nav {
+  text-align: center;
+}
+
+.card-container{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 75%;
+  margin: auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.drop-down-icon, .notification-icon {
+  width: 30px;
+  height: 100%;
+  margin: 20px;
+}
+
+/*************************
+          CARD
+*************************/
+.card * {
+  border: 2px grey dashed;
+  margin: 0;
+}
+
+.card,
+.stats,
+.name {
+  display: flex;
+}
+
+.card {
+  flex-wrap: wrap;
+  background-color: #fff;
+  border: 2px lightgrey solid;
+  flex: 0 0 400px;
+  /*width: 100%;*/
+  /*min-width: 200px;*/
+  margin: 7px;
+}
+
+/*******title section********/
+.card-title {
+  flex: 1 0 100%;
+  background-color: lightgrey;
+  margin: 0;
+}
+
+/*******img section********/
+
+.card-img{
+  flex: 1 0 40%;
+}
+
+.img {
+  border-radius: 50%;
+  width: 115px;
+  max-width: 240px;
+  height: 100%;
+}
+
+/*******stats section********/
+
+.stats {
+  flex-direction: column;
+  flex: 1 0 40%;
+}
+
+.number {
+  font-size: 10vh;
+  flex: 1 0 80px;
+}
+
+/*******bottom section********/
+
+.name {
+  flex: 1 0 100%;
+  border-top: 2px lightgrey solid;
+}
+
+/*************************
+      MEDIA QUERIES
+*************************/
+/*
+@media (min-width: 540px) {
+  .card-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 35%;
+    flex: 2 1 46%;
+}*/
