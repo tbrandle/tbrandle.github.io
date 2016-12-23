@@ -2,34 +2,22 @@
           GENERAL
 *******************************/
 
-body{
-  display: flex
+body {
+  display: flex;
+  flex-wrap: wrap;
+
 }
 
 /*******************************
-       SECTION/CONTAINER
+       IMAGE CONTAINER
 *******************************/
 
-.container{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap-reverse;
-  width: 50%;
-  height: 100vh;
-}
 
 .img-conatiner {
-  position: relative;;
+  height: 300px;
   background-image: url("images/honnold.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.content-container {
-  position: absolute;
-  top: 41%;
-  left: 36%;
-  display: block;
 }
 
 .back{
@@ -54,10 +42,18 @@ body{
        PROFILE CONTAINER
 ********************************/
 
-.profile-container{
+.content-container {
+  position: absolute;
+  top: 41%;
+  left: 36%;
+  /*display: block;*/
+}
+
+.profile-container {
   margin: 25px 20px 0;
   color: white;
 }
+
 .profile-btn {
   background-color: transparent;
   color: white;
@@ -66,7 +62,6 @@ body{
   margin-right: 15px;
   width: 90px;
 }
-
 
 /*******************************
        BOX STYLE
@@ -80,47 +75,47 @@ body{
 
 .box {
   position: relative;
-  width: 33.333%;
-  height: 33.333%;
+  width: 50%;
+  height: 50%;
 }
 
-.box1 {
-  background-color: #BDBDBD;
+.profile {
+  background-color: #E16036;
   order: 8;
 }
 
-.box2 {
-  background-color: #E16036;
-  flex-grow: 2;
+.fire {
+  background-color: #BDBDBD;
   order: 7;
 }
 
-.box3 {
+
+.mountains {
   background-color: #6C756B;
   order: 6;
 }
 
-.box4 {
+.carabiner {
   background-color: #93ACB5;
   order: 5;
 }
 
-.box5 {
+.summit {
   background-color: #BBDEFB;
   order: 4;
 }
 
-.box6{
+.teepee {
   background-color: grey;
   order: 3;
 }
 
-.box7 {
+.pick {
   background-color: #81171B;
   order: 2;
 }
 
-.box8{
+.blue-fire{
   background-color: #0292F2;
   order: 1;
 }
@@ -130,7 +125,7 @@ body{
        MEDIA QUERIES
 *******************************/
 
-@media screen and (max-width:775px) {
+/*@media screen and (max-width:775px) {
   body {
     flex-direction: column-reverse;
   }
@@ -163,6 +158,6 @@ body{
   .profile-container{
     margin: 20px 6px 0;
   }
-}
+}*/
 
 @media screen and (max-width:560px) {

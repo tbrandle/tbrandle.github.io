@@ -1,3 +1,7 @@
+/*************************
+      GENERAL
+*************************/
+
 body {
   background-image: url("icons/money.jpg");
   background-size: cover;
@@ -7,6 +11,15 @@ body {
   font-family: sans-serif;
   color: grey;
 }
+
+a:hover{
+  border-bottom: 4px #fec561 solid;
+}
+
+
+/*************************
+      HEADER
+*************************/
 
 header {
   display: flex;
@@ -22,29 +35,16 @@ nav {
   width: 100%;
 }
 
-.nav-icon {
-  width: 35px;
-  height: 100%;
-  margin: 10px 6.5%;
-}
-
-a:hover{
-  border-bottom: 4px #fec561 solid;
-}
-
 .logo {
   width: 185px;
   height: 100%;
   margin: 16px 0;
 }
 
-.card-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 75%;
-  max-width: 778px;
-  margin: 58px auto;
+.nav-icon {
+  width: 35px;
+  height: 100%;
+  margin: 10px 6.5%;
 }
 
 .menu-icon  {
@@ -57,14 +57,24 @@ a:hover{
 /*************************
           CARD
 *************************/
-.card * {
-  margin: 0;
-}
 
 .card,
 .stats,
-.name {
+.location,
+.card-container {
   display: flex;
+}
+
+.card-container {
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 75%;
+  /*max-width: 778px;*/
+  margin: 58px auto;
+}
+
+.card * {
+  margin: 0;
 }
 
 .card {
@@ -75,7 +85,8 @@ a:hover{
   margin: 7px;
 }
 
-/*******title section********/
+/****** card section: top ******/
+
 .card-title {
   flex: 1 0 100%;
   background-color: lightgrey;
@@ -84,13 +95,21 @@ a:hover{
   padding: 4px 0;
 }
 
-/******* middle section ********/
+/****** card section: middle ******/
 
-.card-img,
+.profile,
 .stats {
   margin: 10px 0 10px 10px;
 }
-.card-img{
+
+.baby-img {
+  border-radius: 50%;
+  width: 115px;
+  max-width: 240px;
+  height: 100%;
+}
+
+.profile{
   flex: 1 0 40%;
 }
 
@@ -99,22 +118,15 @@ a:hover{
   flex: 1 0 40%;
 }
 
-.img {
-  border-radius: 50%;
-  width: 115px;
-  max-width: 240px;
-  height: 100%;
-}
-
 .number {
   font-size: 4em;
   flex: 1 0 80px;
   color: #6098ae;
 }
 
-/*******bottom section********/
+/****** card section: bottom ******/
 
-.name {
+.location {
   flex: 1 0 100%;
   border-top: 2px lightgrey solid;
   justify-content: center;
@@ -127,13 +139,13 @@ a:hover{
 *************************/
 
   @media (min-width: 814px) {
-    .nav-icon {
-      margin: 10px 7%;
-    }
-
     nav{
       position: inherit;
       background-color: transparent;
+    }
+
+    .nav-icon {
+      margin: 10px 7%;
     }
 
     .logo {
@@ -143,5 +155,10 @@ a:hover{
     .menu-icon {
       width: 31px;
       padding: 0 38px;
+    }
+
+    .card-container{
+      width: 100%;
+      max-width: 900px;
     }
 }
