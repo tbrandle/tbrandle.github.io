@@ -4,9 +4,10 @@ nav {
 
 .card-container{
   display: flex;
-  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   width: 75%;
+  max-width: 778px;
   margin: auto;
 }
 
@@ -25,7 +26,7 @@ header {
           CARD
 *************************/
 .card * {
-  border: 2px grey dashed;
+  /*border: 2px grey dashed;*/
   margin: 0;
 }
 
@@ -39,9 +40,7 @@ header {
   flex-wrap: wrap;
   background-color: #fff;
   border: 2px lightgrey solid;
-  flex: 0 0 400px;
-  /*width: 100%;*/
-  /*min-width: 200px;*/
+  flex: .3 0 287px;
   margin: 7px;
 }
 
@@ -50,11 +49,21 @@ header {
   flex: 1 0 100%;
   background-color: lightgrey;
   margin: 0;
+  text-align: center;
 }
 
-/*******img section********/
+/******* middle section ********/
 
+.card-img,
+.stats {
+  margin: 10px 0 10px 10px;
+}
 .card-img{
+  flex: 1 0 40%;
+}
+
+.stats {
+  flex-direction: column;
   flex: 1 0 40%;
 }
 
@@ -63,13 +72,6 @@ header {
   width: 115px;
   max-width: 240px;
   height: 100%;
-}
-
-/*******stats section********/
-
-.stats {
-  flex-direction: column;
-  flex: 1 0 40%;
 }
 
 .number {
@@ -82,18 +84,15 @@ header {
 .name {
   flex: 1 0 100%;
   border-top: 2px lightgrey solid;
+  justify-content: center;
+  padding: 4px 0;
 }
 
 /*************************
       MEDIA QUERIES
 *************************/
-/*
+
 @media (min-width: 540px) {
-  .card-container {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .card {
-    width: 35%;
-    flex: 2 1 46%;
+  /*.card {
+    max-width: 400px
 }*/
