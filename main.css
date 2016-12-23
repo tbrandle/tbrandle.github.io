@@ -1,0 +1,147 @@
+body {
+  background-image: url("icons/money.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 230% 100%;
+  background-position: 31%;
+  font-family: sans-serif;
+  color: grey;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: linear-gradient(to bottom, black 57%, transparent 101%);
+  margin-bottom: 17px;
+}
+
+nav {
+  flex: 1 1 100%;
+  text-align: center;
+  width: 100%;
+}
+
+.nav-icon {
+  width: 35px;
+  height: 100%;
+  margin: 10px 6.5%;
+}
+
+a:hover{
+  border-bottom: 4px #fec561 solid;
+}
+
+.logo {
+  width: 185px;
+  height: 100%;
+  margin: 16px 0;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 75%;
+  max-width: 778px;
+  margin: 58px auto;
+}
+
+.menu-icon  {
+  width: 23px;
+  height: 100%;
+  margin: 24px 0;
+  padding: 0px 16px;
+}
+
+/*************************
+          CARD
+*************************/
+.card * {
+  margin: 0;
+}
+
+.card,
+.stats,
+.name {
+  display: flex;
+}
+
+.card {
+  flex-wrap: wrap;
+  background-color: #fff;
+  border: 2px lightgrey solid;
+  flex: .3 0 287px;
+  margin: 7px;
+}
+
+/*******title section********/
+.card-title {
+  flex: 1 0 100%;
+  background-color: lightgrey;
+  margin: 0;
+  text-align: center;
+  padding: 4px 0;
+}
+
+/******* middle section ********/
+
+.card-img,
+.stats {
+  margin: 10px 0 10px 10px;
+}
+.card-img{
+  flex: 1 0 40%;
+}
+
+.stats {
+  flex-direction: column;
+  flex: 1 0 40%;
+}
+
+.img {
+  border-radius: 50%;
+  width: 115px;
+  max-width: 240px;
+  height: 100%;
+}
+
+.number {
+  font-size: 4em;
+  flex: 1 0 80px;
+  color: #6098ae;
+}
+
+/*******bottom section********/
+
+.name {
+  flex: 1 0 100%;
+  border-top: 2px lightgrey solid;
+  justify-content: center;
+  padding: 4px 0;
+  color: grey;
+}
+
+/*************************
+      MEDIA QUERIES
+*************************/
+
+  @media (min-width: 814px) {
+    .nav-icon {
+      margin: 10px 7%;
+    }
+
+    nav{
+      position: inherit;
+      background-color: transparent;
+    }
+
+    .logo {
+      width: 280px;
+    }
+
+    .menu-icon {
+      width: 31px;
+      padding: 0 38px;
+    }
+}
